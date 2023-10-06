@@ -6,10 +6,16 @@
 
 
 int main() {
+    //testing 
     Customer c1{"Arman", "094410841", 100000001110.0};
-    Dealership d{new Bmw{"X6", Hybrid, 395.453, 2020}, new Bmw{"troyka", Electric, 100.453, 2000},
-    new Audi{"TT", Gas, 565.12, 2019}, new Mercedes{"G99", Electric, 999.453, 2023},
-    new Bmw{"X99", Hybrid, 1395.453, 2020}};
+    Dealership d
+    {
+        new Bmw{"X6", Hybrid, 395.453, 2020},
+        new Bmw{"troyka", Electric, 100.453, 2000},
+        new Audi{"TT", Gas, 565.12, 2019}, 
+        new Mercedes{"G99", Electric, 999.453, 2023},
+        new Bmw{"X99", Hybrid, 1395.453, 2020}
+    };
   
     for (int i = 0; i < d.get_all_cars().size(); ++i)
     {
