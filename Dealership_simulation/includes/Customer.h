@@ -15,10 +15,10 @@ public:
     void purchase_car(Dealership&, const std::string&);
 
 public:
-    std::string                  get_name() const;
-    std::string          get_contact_info() const;
-    double                      get_money() const;
-    std::vector<Car*>   get_personal_cars() const;
+    std::string                   get_name() const;
+    std::string           get_contact_info() const;
+    double                       get_money() const;
+    std::vector<Car*>    get_personal_cars() const;
     void                         set_money(double);
     void operator=(Car*);
 
