@@ -20,6 +20,7 @@ public:
     double                      get_money() const;
     std::vector<Car*>   get_personal_cars() const;
     void                         set_money(double);
+    void operator=(Car*);
 
 private:
     std::string               _name;

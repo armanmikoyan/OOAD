@@ -32,13 +32,18 @@ void Customer::set_money(double money)
     _money -= money;
 }
 
+void Customer::operator=(Car* car)
+{
+    _personal_cars.push_back(car);
+}
+
 void Customer::purchase_car(Dealership& dealership, const std::string& preferable_car) 
 {
     for (int i = 0; i < dealership.get_all_cars().size(); ++i)
     {
         if (dealership.get_all_cars()[i]->get_name() == preferable_car && dealership.get_all_cars()[i]->get_price() <= get_money())
         {
-            get_personal_cars().push_back(dealership.get_all_cars()[i]);
+            _personal_cars.push_back(dealership.get_all_cars()[i]);
             dealership.set_cars(i);
             set_money(dealership.get_all_cars()[i]->get_price());
             return;
